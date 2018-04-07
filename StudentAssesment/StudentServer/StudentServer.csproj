@@ -230,6 +230,10 @@
     <Compile Include="Migrations\StudentMigrations\201804071133190_initial-Migration.Designer.cs">
       <DependentUpon>201804071133190_initial-Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\StudentMigrations\201804071236295_mig2.cs" />
+    <Compile Include="Migrations\StudentMigrations\201804071236295_mig2.Designer.cs">
+      <DependentUpon>201804071236295_mig2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\StudentMigrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -310,6 +314,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\StudentMigrations\201804071133190_initial-Migration.resx">
       <DependentUpon>201804071133190_initial-Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\StudentMigrations\201804071236295_mig2.resx">
+      <DependentUpon>201804071236295_mig2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

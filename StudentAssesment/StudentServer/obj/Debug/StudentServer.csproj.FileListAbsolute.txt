@@ -79,3 +79,4 @@ C:\Users\s00164548\Source\Repos\RADproject\StudentAssesment\StudentServer\bin\Cs
 C:\Users\s00164548\Source\Repos\RADproject\StudentAssesment\StudentServer\bin\CsvHelper.xml
 C:\Users\s00164548\Source\Repos\RADproject\StudentAssesment\StudentServer\obj\Debug\StudentServer.Migrations.StudentMigrations.initialMigration.resources
 C:\Users\s00164548\Source\Repos\RADproject\StudentAssesment\StudentServer\obj\Debug\StudentServer.csproj.GenerateResource.Cache
+C:\Users\s00164548\Source\Repos\RADproject\StudentAssesment\StudentServer\obj\Debug\StudentServer.Migrations.StudentMigrations.mig2.resources
