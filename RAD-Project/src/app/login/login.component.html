@@ -1,0 +1,12 @@
+<div class="example-container">
+  <h2>Log in</h2>
+  <mat-form-field>
+    <input matInput placeholder="Enter your email"  [(ngModel)]="emailM" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Enter your password"  [(ngModel)]="passwordM" [formControl]="password" required>
+    <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <button mat-raised-button color="accent" (click)="login()">Login</button>
+</div>

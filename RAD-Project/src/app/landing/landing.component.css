@@ -1,0 +1,56 @@
+.example-card {
+    width: 20%;
+    margin: 1%;
+    text-align: center;
+    cursor: pointer !important;
+  }
+
+.example-card:hover{
+    box-shadow: 0 15px 10px 5px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.example-card:active{
+    animation: clicked .3s linear;
+}
+  
+mat-icon{
+    font-size: 200px;
+    height: 200px;
+    width: 200px;
+}
+
+mat-card-title.title{
+    font-size: 2em;
+    text-align: center;
+}
+
+mat-card-header{
+    justify-content: center;
+}
+
+.tile-holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    margin: 10% 1% 1%;
+}
+
+
+@keyframes clicked{
+    0%{
+        box-shadow: 0 15px 10px 5px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+    }
+    50%{
+        box-shadow: 0 15px 10px 5px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    }
+    100%{
+        box-shadow: 0 15px 10px 5px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+    }
+}

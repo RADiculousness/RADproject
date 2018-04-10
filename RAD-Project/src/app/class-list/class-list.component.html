@@ -1,0 +1,25 @@
+<div class="spacer">
+  <h2>Your classes</h2>
+</div>
+
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened="true">
+    <div class="options">
+      <button mat-button color="accent">Add a class</button>
+      <button mat-button color="accent" (click)="addModule()">Remove a class</button>
+      <button mat-button color="accent" (click)="logg()">Other action</button>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="item-holder">
+      <div class="item" *ngFor="let class of modules">
+        <h3>{{class.ModuleName}}</h3>
+        <div class="class-options">
+          <button mat-button color="accent">Attendance</button>
+          <button mat-button color="primary">Grades</button>
+          <button mat-button color="primary">Timetable</button>
+        </div>
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

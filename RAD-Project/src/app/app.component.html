@@ -1,0 +1,28 @@
+
+<mat-toolbar color="primary">
+  <span class="sp-logo" [routerLink]="['/welcome']">Declan Mania</span>
+  <span class="example-spacer-small"></span>
+  <button class="white" mat-button [routerLink]="['/results']" *ngIf="verified | async"><mat-icon color="accent">check</mat-icon>Results</button>
+  <button class="white" mat-button [routerLink]="['/attendance']" *ngIf="verified | async"><mat-icon color="accent">people</mat-icon>Attendance</button>
+  <span class="example-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<!-- =====================================================
+  Menu
+  ====================================================== -->
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <span>Login</span>
+  </button>
+  <button disabled mat-menu-item>
+    <span>Logout</span>
+  </button>
+</mat-menu>
+
+<!-- =====================================================
+  Main thing
+  ====================================================== -->
+  <router-outlet></router-outlet>
