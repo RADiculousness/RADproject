@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
-import {Observable} from 'rxjs/Rx';
+import { Observable } from 'rxjs/Rx';
 
 // Import RxJs required methods
 import 'rxjs/add/operator/map';
@@ -41,7 +41,6 @@ export class ClassListComponent implements OnInit {
   }
 
   loadModules() {
-    // Get all comments
      this.httpService.getModules()
                        .subscribe(
                            modules => this.modules = modules,

@@ -1,3 +1,28 @@
-<p>
-  attendance works!
-</p>
+<div class="spacer">
+  <h2>Students enrolled in {{name}}</h2>
+</div>
+
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened="true">
+    <div class="options">
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="item-holder">
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+        <tr *ngFor="let student of students">
+          <td>{{student.RegistrationID}}</td>
+          <td>{{student.FirstName}}</td>
+          <td>{{student.LastName}}</td>
+          <td>{{student.Email}}</td>
+        </tr>
+      </table>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

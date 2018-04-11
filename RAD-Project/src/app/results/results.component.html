@@ -1,3 +1,26 @@
-<p>
-  results works!
-</p>
+<div class="spacer">
+  <h2>Lectures for {{name}}</h2>
+</div>
+
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened="true">
+    <div class="options">
+      <button mat-button color="accent" *ngIf="clicked == false" (click)="clickAlternator()">Click me!</button>
+      <button mat-button color="accent" *ngIf="clicked == true">I don't do anything!</button>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="item-holder">
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>{{lectures.Day}}</td>
+          <td>{{lectures.TimeSlot}}</td>
+        </tr>
+      </table>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

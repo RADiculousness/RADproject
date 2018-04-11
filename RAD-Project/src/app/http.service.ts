@@ -26,10 +26,34 @@ export class HttpService {
     return this.http.post('http://localhost:2830/api/Modules', body, options)
                      .map((res:Response) => res.json())
                      .catch((error:any) => Observable.throw(error.json));
-}   
+  }   
 
   getLecturers(): Observable<any[]> {
-    return this.http.get('http://localhost:2830/Help/Api/GET-api-Modules')
+    return this.http.get('http://localhost:2830/api/Modules')
+                    .map((res:Response) => res.json())
+                    .catch((error:any) => Observable.throw(error.json()));
+  }
+
+  getEnrollments(id: number): Observable<any[]>{
+    return this.http.get('http://localhost:2830/api/Enrollments/' + id)
+                    .map((res:Response) => res.json())
+                    .catch((error:any) => Observable.throw(error.json()));
+  }
+
+  getStudent(id: number): Observable<any[]>{
+    return this.http.get('http://localhost:2830/api/Students/' + id)
+                    .map((res:Response) => res.json())
+                    .catch((error:any) => Observable.throw(error.json()));
+  }
+
+  getStudents(): Observable<any[]>{
+    return this.http.get('http://localhost:2830/api/Students')
+                    .map((res:Response) => res.json())
+                    .catch((error:any) => Observable.throw(error.json()));
+  }
+
+  getLectures(id: number): Observable<any[]>{
+    return this.http.get('http://localhost:2830/api/Lectures/' + id)
                     .map((res:Response) => res.json())
                     .catch((error:any) => Observable.throw(error.json()));
   }

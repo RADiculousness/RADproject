@@ -1,6 +1,6 @@
 
 <mat-toolbar color="primary">
-  <span class="sp-logo" [routerLink]="['/welcome']">Declan Mania</span>
+  <span class="sp-logo" [routerLink]="['/class-list']">Declan Mania</span>
   <span class="example-spacer-small"></span>
   <button class="white" mat-button [routerLink]="['/results']" *ngIf="verified | async"><mat-icon color="accent">check</mat-icon>Results</button>
   <button class="white" mat-button [routerLink]="['/attendance']" *ngIf="verified | async"><mat-icon color="accent">people</mat-icon>Attendance</button>

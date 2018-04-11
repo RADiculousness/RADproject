@@ -24,14 +24,14 @@ import { HttpService } from './http.service';
 const appRoutes: Routes = [
   { path: 'landing', component: LandingComponent },
   { path: 'class-list', component: ClassListComponent },
-  { path: 'attendance', component: AttendanceComponent },
-  { path: 'results', component: ResultsComponent },
+  { path: 'attendance/:id/:name', component: AttendanceComponent },
+  { path: 'lectures/:id/:name', component: ResultsComponent },
   { path: 'login', component: LoginComponent},
   { path: '',
-    redirectTo: '/landing',
+    redirectTo: '/class-list',
     pathMatch: 'full'
   },
-  { path: '**', component: LandingComponent }
+  { path: '**', component: ClassListComponent }
 ];
 
 @NgModule({
