@@ -28,7 +28,7 @@ const appRoutes: Routes = [
   { path: 'results', component: ResultsComponent },
   { path: 'login', component: LoginComponent},
   { path: '',
-    redirectTo: '/login',
+    redirectTo: '/landing',
     pathMatch: 'full'
   },
   { path: '**', component: LandingComponent }
