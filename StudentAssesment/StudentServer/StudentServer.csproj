@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -234,6 +235,10 @@
     <Compile Include="Migrations\StudentMigrations\201804071236295_mig2.Designer.cs">
       <DependentUpon>201804071236295_mig2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\StudentMigrations\201804122320180_Login.cs" />
+    <Compile Include="Migrations\StudentMigrations\201804122320180_Login.Designer.cs">
+      <DependentUpon>201804122320180_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\StudentMigrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -244,6 +249,7 @@
     <Compile Include="Models\StudentModel\Enrollment.cs" />
     <Compile Include="Models\StudentModel\Lecture.cs" />
     <Compile Include="Models\StudentModel\Lecturer.cs" />
+    <Compile Include="Models\StudentModel\Login.cs" />
     <Compile Include="Models\StudentModel\Module.cs" />
     <Compile Include="Models\StudentModel\Student.cs" />
     <Compile Include="Models\StudentModel\StudentAttendance.cs" />
@@ -317,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\StudentMigrations\201804071236295_mig2.resx">
       <DependentUpon>201804071236295_mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\StudentMigrations\201804122320180_Login.resx">
+      <DependentUpon>201804122320180_Login.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

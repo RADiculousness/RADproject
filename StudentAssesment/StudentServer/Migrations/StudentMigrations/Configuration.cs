@@ -1,6 +1,7 @@
 namespace StudentServer.Migrations.StudentMigrations
 {
     using CsvHelper;
+    using Microsoft.AspNet.Identity;
     using Models.DTO;
     using Models.StudentModel;
     using System;
@@ -31,6 +32,7 @@ namespace StudentServer.Migrations.StudentMigrations
                                 context.Lecturers.First(l => l.FirstName.Equals("Paul")
                                                         && l.SecondName.Equals("Powell")));
                 context.SaveChanges();
+                SeedUser(context);
                 base.Seed(context);
             }
         }
@@ -109,7 +111,7 @@ namespace StudentServer.Migrations.StudentMigrations
 
         public void SeedStudents(StudentDBContext context)
         {
-
+            #region Student
             context.Students.AddOrUpdate(p => p.Email,
                                  new Student
                                  {
@@ -157,9 +159,20 @@ namespace StudentServer.Migrations.StudentMigrations
                                        Email = "S00000007" + "@mail.itsligo.ie"
                                    }
                                  );
-
+            #endregion
 
             context.SaveChanges();
+        }
+        private void SeedUser(StudentDBContext context)
+        {
+            PasswordHasher ps = new PasswordHasher();
+
+            context.UserLogin.AddOrUpdate(u => u.Username,
+                new  Models.StudentModel.Login
+                {
+                    Username = "S0000001",
+                    Password = ps.HashPassword("Test$123")
+                });
         }
     }
 }

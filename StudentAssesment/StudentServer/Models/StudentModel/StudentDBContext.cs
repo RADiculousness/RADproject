@@ -19,6 +19,7 @@ namespace StudentServer.Models.StudentModel
         public DbSet<Lecture> Deliveries { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
         public DbSet<StudentAttendance> AttendanceList { get; set; }
+        public DbSet<Login> UserLogin { get; set; }
 
         public System.Data.Entity.DbSet<StudentServer.Models.StudentModel.StudentGrade> StudentGrades { get; set; }
     }
