@@ -11,7 +11,7 @@ namespace StudentServer.Migrations.StudentMigrations
     using System.Linq;
     using System.Reflection;
     using System.Text;
-
+    //
     internal sealed class Configuration : DbMigrationsConfiguration<StudentServer.Models.StudentModel.StudentDBContext>
     {
         public Configuration()

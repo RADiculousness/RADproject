@@ -16,5 +16,5 @@ namespace StudentServer.Models.StudentModel
 
         [DataType(DataType.Password)]
         public string Password { get; set; }
-    }
+    }//
 }

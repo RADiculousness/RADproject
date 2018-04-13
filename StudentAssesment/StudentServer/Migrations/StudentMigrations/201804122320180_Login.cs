@@ -6,7 +6,7 @@ namespace StudentServer.Migrations.StudentMigrations
     public partial class Login : DbMigration
     {
         public override void Up()
-        {
+        {//
             CreateTable(
                 "dbo.Logins",
                 c => new
